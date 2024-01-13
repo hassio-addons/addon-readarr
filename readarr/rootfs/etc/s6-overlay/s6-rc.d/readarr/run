@@ -1,0 +1,10 @@
+#!/command/with-contenv bashio
+# shellcheck shell=bash
+# ==============================================================================
+# Home Assistant Community Add-on: Readarr
+# Runs Readarr
+# ==============================================================================
+
+bashio::log.info 'Starting Readarr...'
+
+exec /opt/bin/Readarr -nobrowser -data=/config
