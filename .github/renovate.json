@@ -32,8 +32,7 @@
       ],
       "datasourceTemplate": "github-releases",
       "depNameTemplate": "Readarr/Readarr",
-      "extractVersionTemplate": "^v(?<version>.*)$",
-      "ignoreUnstable": false
+      "extractVersionTemplate": "^v(?<version>.*)$"
     }
   ],
   "packageRules": [
