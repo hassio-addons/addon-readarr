@@ -24,6 +24,16 @@
       "versioningTemplate": "loose",
       "datasourceTemplate": "repology",
       "depNameTemplate": "alpine_3_19/{{package}}"
+    },
+    {
+      "fileMatch": ["/Dockerfile$"],
+      "matchStrings": [
+        "ARG READARR_VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "Readarr/Readarr",
+      "extractVersionTemplate": "^v(?<version>.*)$",
+      "ignoreUnstable": false
     }
   ],
   "packageRules": [
@@ -40,16 +50,6 @@
       "matchDatasources": ["docker"],
       "matchUpdateTypes": ["minor", "patch"],
       "automerge": true
-    },
-    {
-      "fileMatch": ["/Dockerfile$"],
-      "matchStrings": [
-        "ARG READARR_VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
-      ],
-      "datasourceTemplate": "github-releases",
-      "depNameTemplate": "Readarr/Readarr",
-      "extractVersionTemplate": "^v(?<version>.*)$",
-      "ignoreUnstable": false
     }
   ]
 }
