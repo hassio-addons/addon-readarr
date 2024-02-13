@@ -34,7 +34,7 @@
       "depNameTemplate": "Readarr/Readarr",
       "versioningTemplate": "loose",
       "extractVersionTemplate": "^v(?<version>.*)$",
-      "allowedVersions": "!/2.0.0.46$/"
+      "allowedVersions": "!/2\\.0\\.0\\.46$/"
     }
   ],
   "packageRules": [
