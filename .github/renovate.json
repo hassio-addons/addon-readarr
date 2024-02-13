@@ -30,11 +30,10 @@
       "matchStrings": [
         "ARG READARR_VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
       ],
-      "datasourceTemplate": "github-tags",
+      "datasourceTemplate": "github-releases",
       "depNameTemplate": "Readarr/Readarr",
       "versioningTemplate": "loose",
-      "extractVersionTemplate": "^v(?<version>.*)$",
-      "allowedVersions": "!/2\\.0\\.0\\.46$/"
+      "extractVersionTemplate": "^v(?<version>.*)$"
     }
   ],
   "packageRules": [
