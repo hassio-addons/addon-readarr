@@ -30,7 +30,7 @@
       "matchStrings": [
         "ARG READARR_VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
       ],
-      "datasourceTemplate": "github-releases",
+      "datasourceTemplate": "github-tags",
       "depNameTemplate": "Readarr/Readarr",
       "versioningTemplate": "loose",
       "extractVersionTemplate": "^v(?<version>.*)$"
@@ -50,6 +50,12 @@
       "matchDatasources": ["docker"],
       "matchUpdateTypes": ["minor", "patch"],
       "automerge": true
+    },
+    {
+      "matchDatasources": ["github-tags"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)\\.(?<build>\\d+)$",
+      "allowedVersions": "<2.0.0"
     }
   ]
 }
