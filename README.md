@@ -16,6 +16,13 @@
 
 Book Manager and Automation (Sonarr for Ebooks).
 
+## Deprecation warning
+
+**This add-on is in a deprecated state!**
+
+The upstream Readarr project has been retired; meaning this add-on will not get
+updates anymore (and it is in a broken state already).
+
 ## About
 
 [Readarr] is an ebook and audiobook collection manager for Usenet and BitTorrent
@@ -107,7 +114,7 @@ SOFTWARE.
 [issue]: https://github.com/hassio-addons/addon-readarr/issues
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-readarr.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2025.svg
-[project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
+[project-stage-shield]: https://img.shields.io/badge/project%20stage-%20!%20DEPRECATED%20%20%20!-ff0000.svg
 [reddit]: https://reddit.com/r/homeassistant
 [releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-readarr.svg
 [releases]: https://github.com/hassio-addons/addon-readarr/releases
