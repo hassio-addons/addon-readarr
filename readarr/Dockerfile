@@ -18,8 +18,7 @@ RUN \
     xmlstarlet=1.6.1-r2 \
   \
   && if [ "${BUILD_ARCH}" = "aarch64" ]; then READARR_ARCH="arm64"; \
-  elif [ "${BUILD_ARCH}" = "amd64" ]; then READARR_ARCH="x64"; \
-  elif [ "${BUILD_ARCH}" = "armv7" ]; then READARR_ARCH="arm"; fi \
+  elif [ "${BUILD_ARCH}" = "amd64" ]; then READARR_ARCH="x64"; fi \
   \
   && curl -J -L -o /tmp/readarr.tar.gz \
       "https://github.com/Readarr/Readarr/releases/download/v${READARR_VERSION}/Readarr.develop.${READARR_VERSION}.linux-musl-core-${READARR_ARCH}.tar.gz" \
